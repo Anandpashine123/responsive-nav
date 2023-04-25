@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+nav {
+  background-color: #bbd6b8;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  padding: 0 ;
+  font-weight: bold;
+  line-height: 80px;
+  font-style: italic;
+}
+label.logo a{
+  color: white;
+  padding: 0;
+
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 20px;
+  margin: 30px 5px;
+}
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.Active {
+  background: none;
+  color: black;
+}
+a.Active:hover {
+  transition: 2s;
+  color: #a4bc92;
+}
+.checkbtn {
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #e4dccf;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 2s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  a :hover,
+  a.Active {
+    background: none;
+    color: #536262;
+  }
+  #check:checked ~ ul {
+    left: 0;
+    
+  }
+  .fas{
+    font-weight: 900;
+    color: white;
+  }
+  section {
+    background: url("imeages\BGimeage.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh 80px);
+
+  }
+}
